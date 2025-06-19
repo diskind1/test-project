@@ -1,0 +1,22 @@
+import math
+def power(a, b):
+  """Function for exponentiation"""
+  return a ** b
+
+def square_root(a):
+  """Function for square root"""
+  if a < 0:
+    return "Error: Square root of negative number"
+  return math.sqrt(a)
+
+def factorial(n):
+  """Function for factorial"""
+  if n < 0:
+    return "Error: Factorial of negative number"
+  return math.factorial(n)
+
+if __name__ == "__main__":
+  print("Advanced Calculator")
+  print(f"2^3 = {power(2, 3)}")
+  print(f"√16 = {square_root(16)}")
+  print(f"5! = {factorial(5)}")
